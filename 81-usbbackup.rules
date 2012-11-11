@@ -1,2 +1,1 @@
-# Galaxy S
-KERNEL=="sd?",ATTRS{idVendor}=="18d1",ATTRS{idProduct}=="4e22",ATTRS{serial}=="39359067DA9800EC",RUN+="/home/osar/bin/usbbackup.sh %s{size}"
+KERNEL=="sd?",SUBSYSTEM=="block",RUN+="/home/osar/bin/usbbackup.sh %s{size}"
